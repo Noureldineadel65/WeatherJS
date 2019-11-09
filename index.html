@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WeatherJS</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-dark">
+    <nav class="navbar navbar-light bg-light d-flex justify-content-center border border-primary mb-4">
+        <a class="navbar-brand font-huge d-flex align-items-center" href="#">Weather<i class="fab fa-js ml-1"></i></a>
+    </nav>
+    <div id="app"></div>
+    <!-- <div class="card mx-auto mt-5 shadow-lg bg-info" style="width: 20rem;">
+        <div class="card-body">
+            <h3 class="card-title text-center text-light">Miami</h3>
+            <h6 class="card-title text-dark text-center">Mostly Cloudy</h6>
+            <h6 class="card-title text-light text-center">79.8 F (26.6 C)</h6>
+            <div class="container d-flex flex-column justify-content-center align-items-center">
+                <img src="https://openweathermap.org/img/wn/09d.png" alt=""
+                    class="img-fluid d-flex justify-content-center">
+                <ul class="list-group mb-4 mt-2">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                </ul>
+                <a href="#" class="btn btn-primary text-center" data-toggle="modal" data-target="#locationModal">Change
+                    Location</a>
+            </div>
+
+        </div>
+    </div> -->
+    <div class="modal fade" id="locationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Location</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="cityInput">City</label>
+                            <input type="text" class="form-control" id="cityInput">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="submitCountry" data-dismiss="modal">Save
+                        changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/8027935937.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./storage.js"></script>
+    <script src="./weather.js"></script>
+    <script src="./UI.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
